@@ -1,78 +1,80 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   /* Elegant White/Zinc theme for Light mode */
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #09090b;
+
   /* Zinc 950 */
 
-  --card: #ffffff;
+  --card: #fff;
   --card-foreground: #09090b;
-
-  --popover: #ffffff;
+  --popover: #fff;
   --popover-foreground: #09090b;
 
   /* Primary: Violet/Indigo usually looks very premium */
   --primary: #6366f1;
-  /* Indigo 500 */
-  --primary-foreground: #ffffff;
 
+  /* Indigo 500 */
+  --primary-foreground: #fff;
   --secondary: #f4f4f5;
+
   /* Zinc 100 */
   --secondary-foreground: #18181b;
+
   /* Zinc 900 */
 
   --muted: #f4f4f5;
   --muted-foreground: #71717a;
+
   /* Zinc 500 */
 
   --accent: #f4f4f5;
   --accent-foreground: #18181b;
-
   --destructive: #ef4444;
   --destructive-foreground: #fafafa;
-
   --border: #e4e4e7;
+
   /* Zinc 200 */
   --input: #e4e4e7;
   --ring: #6366f1;
-
   --radius: 0.75rem;
+
   /* More rounded 12px */
 }
 
 .dark {
   /* Deep, rich slate/gray for Dark mode instead of pure black */
   --background: #030712;
+
   /* Gray 950 - slightly cooler than true black */
   --foreground: #f8fafc;
+
   /* Slate 50 */
 
   --card: #0b0f1a;
+
   /* One step lighter than background */
   --card-foreground: #f8fafc;
-
   --popover: #0b0f1a;
   --popover-foreground: #f8fafc;
-
   --primary: #818cf8;
-  /* Indigo 400 - lighter for dark mode */
-  --primary-foreground: #ffffff;
 
+  /* Indigo 400 - lighter for dark mode */
+  --primary-foreground: #fff;
   --secondary: #1e293b;
+
   /* Slate 800 */
   --secondary-foreground: #f8fafc;
-
   --muted: #1e293b;
   --muted-foreground: #94a3b8;
+
   /* Slate 400 */
 
   --accent: #1e293b;
   --accent-foreground: #f8fafc;
-
   --destructive: #7f1d1d;
   --destructive-foreground: #f8fafc;
-
   --border: #1e293b;
   --input: #1e293b;
   --ring: #818cf8;
@@ -112,7 +114,10 @@ body {
 
 /* Dot Pattern Background */
 .bg-dot-pattern {
-  background-image: radial-gradient(var(--muted-foreground) 1px, transparent 1px);
+  background-image: radial-gradient(
+    var(--muted-foreground) 1px,
+    transparent 1px
+  );
   background-size: 24px 24px;
 }
 
