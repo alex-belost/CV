@@ -3,7 +3,7 @@ import { Outfit } from 'next/font/google'; // Modern geometric sans
 import './globals.css';
 
 import { ThemeProvider } from '@/components/theme/provider';
-import { ThemeColor } from '@/components/theme/theme-color';
+import { ThemeColor } from '@/components/theme/color';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 
@@ -35,8 +35,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ThemeColor />
+
           <Header />
+
           <main className="flex w-full flex-1 flex-col">{children}</main>
+
           <Footer />
         </ThemeProvider>
       </body>

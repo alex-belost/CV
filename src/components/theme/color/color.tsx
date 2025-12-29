@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 
-export function ThemeColor() {
+export function Color() {
   const { resolvedTheme } = useTheme();
 
   useEffect(() => {
